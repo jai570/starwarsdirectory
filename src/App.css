@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* PlanetsDirectory.css */
+.planets-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.planet-card {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly more opaque white background */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  color: #fff; /* Dark text color for contrast */
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.planet-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.load-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.load-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ResidentsDisplay.css */
+.residents-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resident-card {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly more opaque white background */
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  color: #333; /* Dark text color for contrast */
+}
+
+.resident-card:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
 }
