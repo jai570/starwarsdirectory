@@ -35,7 +35,7 @@ body {
 }
 
 .app-container {
-  background: url("/public/assets/science-5350597_1920.jpg") center/cover; /* Planetary background */
+  background: url("/public/assets/science-5350597_1920.jpg") center/cover;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -43,8 +43,8 @@ body {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-  backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   padding: 1rem;
   text-align: center;
 }
@@ -66,7 +66,7 @@ body {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: url("/public/assets/science-5350597_1920.jpg") center/cover fixed; /* Fixed background */
+  background: url("/public/assets/science-5350597_1920.jpg") center/cover fixed;
 }
 
 .app-container {
@@ -77,13 +77,8 @@ body {
 }
 
 .navbar {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Slightly more transparent white background */
-  backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
   padding: 1rem;
   text-align: center;
 }
@@ -91,17 +86,17 @@ body {
 .navbar-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #fff; /* White text for better contrast */
+  color: #fff;
 }
 
 .content-container {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
-  /* Semi-transparent white background for content */
+
   backdrop-filter: blur(10px); /* Glassmorphism blur effect */
-  border-radius: 15px; /* Rounded corners for a softer look */
-  margin: 20px; /* Add margin for a better separation from the background */
+  border-radius: 15px;
+  margin: 20px;
 }
 .content-container::-webkit-scrollbar {
   display: none;

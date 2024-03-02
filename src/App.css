@@ -7,19 +7,14 @@
 }
 
 .planet-card {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Slightly more opaque white background */
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   width: 100%;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  color: #fff; /* Dark text color for contrast */
+  color: #fff;
   font-weight: bold;
 }
 
@@ -52,19 +47,14 @@
 }
 
 .resident-card {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Slightly more opaque white background */
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   padding: 15px;
   margin: 10px;
   width: 250px;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  color: #333; /* Dark text color for contrast */
+  color: #333;
 }
 
 .resident-card:hover {
