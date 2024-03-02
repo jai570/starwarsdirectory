@@ -47,28 +47,23 @@ const PlanetsDirectory = () => {
 
   return (
     <>
+      {loading && (
+        <div className="w-full h-full flex justify-center items-center">
+          <img src="/assets/loader.gif" alt="loader" style={{ width: "80%" }} />
+        </div>
+      )}
       <div className="planets-container">
-        {loading ? (
-          <div className="w-full h-full flex justify-center items-center">
-            <img
-              src="/assets/loader.gif"
-              alt="loader"
-              style={{ width: "100%" }}
-            />
-          </div>
-        ) : (
-          <>
-            {planets.map((planet) => (
-              <div key={planet.name} className="planet-card">
-                <h2>{planet.name}</h2>
-                <p>Climate: {planet.climate}</p>
-                <p>Population: {planet.population}</p>
-                <p>Terrain: {planet.terrain}</p>
-                <ResidentsDisplay residents={planet.residents} />
-              </div>
-            ))}
-          </>
-        )}
+        <>
+          {planets.map((planet) => (
+            <div key={planet.name} className="planet-card">
+              <h2>{planet.name}</h2>
+              <p>Climate: {planet.climate}</p>
+              <p>Population: {planet.population}</p>
+              <p>Terrain: {planet.terrain}</p>
+              <ResidentsDisplay residents={planet.residents} />
+            </div>
+          ))}
+        </>
       </div>
       {!loading && (
         <div className="w-full flex justify-between items-center">
